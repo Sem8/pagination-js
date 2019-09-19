@@ -14,15 +14,25 @@
       #result {
         width: 700px;
         height: 400px;
-        box-shadow: 0px 0px 5px 5px lightgray;
+        box-shadow: 0px 0px 5px 5px pink;
+        margin: 25px auto;
+        background-image: url(resources/devilMarket1.jpg);
+        background-size: 100% 100%;
       }
 
       button {
-        box-shadow: 0px 0px 5px 5px white;
+        box-shadow: 0px 0px 5px 5px hotpink;
+        margin: 5px;
       }
     </style>
   </head>
   <body>
+      <script>
+          function press1() {
+              let x = document.getElementById('result');
+              x.style.backgroundImage='url(resources/devilMarket1.jpg)'
+          }
+      </script>
     <center>
       <div id="result"></div>
       <br>
