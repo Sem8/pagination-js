@@ -7,10 +7,10 @@
     <title>Pagination in Javascript</title>
 
     <style>
-        body {
-            background-image: url(resources/black_cliff.jpg);
-            background-size: cover;
-        }
+      body {
+        background-image: url(resources/black_cliff.jpg);
+        background-size: cover;
+      }
       #result {
         width: 700px;
         height: 400px;
@@ -27,19 +27,29 @@
     </style>
   </head>
   <body>
-      <script>
-          function press1() {
-              let x = document.getElementById('result');
-              x.style.backgroundImage='url(resources/devilMarket1.jpg)'
-          }
-      </script>
+    <script>
+      function press1() {
+        let x = document.getElementById("result");
+        x.style.backgroundImage = "url(resources/devilMarket1.jpg)";
+      }
+
+      function press2() {
+        let x = document.getElementById("result");
+        x.style.backgroundImage = "url(resources/satanProduct1.jpg)";
+      }
+
+      function press3() {
+        let x = document.getElementById("result");
+        x.style.backgroundImage = "url(resources/Angel-of-Death.jpg)";
+      }
+    </script>
     <center>
       <div id="result"></div>
-      <br>
+      <br />
 
-      <button>1</button>
-      <button>2</button>
-      <button>3</button>
+      <button onclick="press1()">1</button>
+      <button onclick="press2()">2</button>
+      <button onclick="press3()">3</button>
       <button>4</button>
       <button>5</button>
     </center>
